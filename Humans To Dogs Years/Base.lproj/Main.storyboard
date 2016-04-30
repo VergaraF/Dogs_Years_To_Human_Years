@@ -43,8 +43,8 @@
                                     <action selector="findAgeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d77-7Q-59w"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doggie.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m9d-xK-bWK">
-                                <rect key="frame" x="38" y="389" width="335" height="293"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cute-cartoon-dog-20533420.png" translatesAutoresizingMaskIntoConstraints="NO" id="m9d-xK-bWK">
+                                <rect key="frame" x="20" y="364" width="374" height="352"/>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Humans years!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg0-up-fhq">
                                 <rect key="frame" x="206" y="285" width="167" height="71"/>
@@ -74,6 +74,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="doggie.jpg" width="567" height="425"/>
+        <image name="cute-cartoon-dog-20533420.png" width="591" height="747"/>
     </resources>
 </document>
