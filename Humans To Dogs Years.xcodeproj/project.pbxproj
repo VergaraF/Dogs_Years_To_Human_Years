@@ -12,6 +12,7 @@
 		D81332751CD42BA400E1642F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81332731CD42BA400E1642F /* Main.storyboard */; };
 		D81332771CD42BA400E1642F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81332761CD42BA400E1642F /* Assets.xcassets */; };
 		D813327A1CD42BA400E1642F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81332781CD42BA400E1642F /* LaunchScreen.storyboard */; };
+		D81332821CD42D9E00E1642F /* doggie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D81332811CD42D9E00E1642F /* doggie.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D81332761CD42BA400E1642F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D81332791CD42BA400E1642F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D813327B1CD42BA400E1642F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D81332811CD42D9E00E1642F /* doggie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = doggie.jpg; path = ../../doggie.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				D813326F1CD42BA400E1642F /* AppDelegate.swift */,
 				D81332711CD42BA400E1642F /* ViewController.swift */,
 				D81332731CD42BA400E1642F /* Main.storyboard */,
+				D81332811CD42D9E00E1642F /* doggie.jpg */,
 				D81332761CD42BA400E1642F /* Assets.xcassets */,
 				D81332781CD42BA400E1642F /* LaunchScreen.storyboard */,
 				D813327B1CD42BA400E1642F /* Info.plist */,
@@ -125,6 +128,7 @@
 				D813327A1CD42BA400E1642F /* LaunchScreen.storyboard in Resources */,
 				D81332771CD42BA400E1642F /* Assets.xcassets in Resources */,
 				D81332751CD42BA400E1642F /* Main.storyboard in Resources */,
+				D81332821CD42D9E00E1642F /* doggie.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
