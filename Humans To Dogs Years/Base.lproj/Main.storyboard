@@ -38,7 +38,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-Xt-Drb">
                                 <rect key="frame" x="134" y="239" width="147" height="30"/>
-                                <state key="normal" title="Find age in dog years"/>
+                                <state key="normal" title="Find age in human years"/>
                                 <connections>
                                     <action selector="findAgeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d77-7Q-59w"/>
                                 </connections>
@@ -54,7 +54,7 @@
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcD-KQ-mO8">
                                 <rect key="frame" x="38" y="285" width="160" height="71"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

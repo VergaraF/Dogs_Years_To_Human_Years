@@ -18,26 +18,45 @@ class ViewController: UIViewController {
     @IBAction func findAgeButton(sender: AnyObject) {
         
         var tempAge = 0
-        let ageGivenByUser = Int(userInput.text!)!
+        let ageGivenByUser = Int(userInput.text!)
         var dogsAgeCounter = 0
         
+        print(ageGivenByUser)
         
-        while (dogsAgeCounter < ageGivenByUser){
+        if (ageGivenByUser == nil){
+            setAgeLabel("Please enter a valid age", color:UIColor.redColor(), size: 14.0, modifyHumanYearsLabel: true)
             
-            if dogsAgeCounter == 0{
-                tempAge = tempAge + 15
-            }else if (dogsAgeCounter == 1){
-                tempAge = tempAge + 9
-            }else{
-                tempAge = tempAge + 4
+        }else{
+            
+            while (dogsAgeCounter < ageGivenByUser){
+            
+                if dogsAgeCounter == 0{
+                    tempAge = tempAge + 15
+                }else if (dogsAgeCounter == 1){
+                    tempAge = tempAge + 9
+                }else{
+                    tempAge = tempAge + 4
+                }
+                dogsAgeCounter += 1
+            
             }
-            dogsAgeCounter += 1
-            
+            setAgeLabel(String(tempAge), color:UIColor.blackColor(), size: 32.0, modifyHumanYearsLabel: false)
+
         }
+    }
+    
+    func setAgeLabel(str:String, color:UIColor, size:CGFloat, modifyHumanYearsLabel:Bool){
+        age.text = str
+        age.font = age.font.fontWithSize(size)
         
-        age.text = String(tempAge)
+        age.textColor = color
         age.hidden = false
-        humanYearsLabel.hidden = false
+        
+        if (modifyHumanYearsLabel){
+            humanYearsLabel.hidden = true
+        }else{
+            humanYearsLabel.hidden = false
+        }
         
     }
     
