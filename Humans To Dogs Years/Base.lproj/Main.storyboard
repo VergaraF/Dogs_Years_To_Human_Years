@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,22 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dogs to Humans years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoT-4F-lQB">
-                                <rect key="frame" x="20" y="42" width="374" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoT-4F-lQB">
+                                <rect key="frame" x="20" y="64" width="374" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="88N-xb-3Bj"/>
+                                    <constraint firstAttribute="width" constant="374" id="nwE-l2-SAG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="okc-Jf-AFN"/>
+                                    <constraint firstAttribute="height" constant="62" id="uLF-9i-WMS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="29"/>
                                 <color key="textColor" red="0.31144812703132629" green="0.60915714502334595" blue="0.10951379686594009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.60511225461959839" green="0.15015473961830139" blue="0.11921603232622147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="-2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How old is your dog?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goX-Ya-4r6">
-                                <rect key="frame" x="38" y="131" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Doggie's age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CjL-v7-h5b">
-                                <rect key="frame" x="38" y="160" width="335" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Doggie's age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CjL-v7-h5b">
+                                <rect key="frame" x="38" y="167" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="ChW-qe-yQA"/>
+                                    <constraint firstAttribute="height" constant="30" id="INv-YX-ALE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="wt3-XC-7Ae"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
@@ -51,15 +57,56 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-Xt-Drb">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-Xt-Drb">
                                 <rect key="frame" x="96" y="239" width="222" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="YnM-tZ-dMm"/>
+                                    <constraint firstAttribute="height" constant="30" id="zQ4-0M-Gpw"/>
+                                </constraints>
                                 <state key="normal" title="Find age in human years"/>
                                 <connections>
                                     <action selector="findAgeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d77-7Q-59w"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2I-5X-Zd2">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="V7C-dh-7qX"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.22745098039215686" green="0.49411764705882355" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.98294121026992798" green="0.94409638643264771" blue="0.94661325216293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Dogs to Humans Years" id="hT8-iU-Muv"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How old is your dog?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goX-Ya-4r6">
+                                <rect key="frame" x="38" y="138" width="335" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="38C-wj-Qft"/>
+                                    <constraint firstAttribute="height" constant="21" id="9g9-aF-zCl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="goX-Ya-4r6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0tS-dF-ZCF"/>
+                            <constraint firstItem="CjL-v7-h5b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2kG-xv-lbE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R2I-5X-Zd2" secondAttribute="trailing" constant="-20" id="GM0-Bt-bSZ"/>
+                            <constraint firstItem="YoT-4F-lQB" firstAttribute="top" secondItem="R2I-5X-Zd2" secondAttribute="bottom" id="MdU-Ki-1nO"/>
+                            <constraint firstItem="YoT-4F-lQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vgv-a7-TyR"/>
+                            <constraint firstItem="YoT-4F-lQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YeU-kd-YER"/>
+                            <constraint firstItem="CjL-v7-h5b" firstAttribute="top" secondItem="goX-Ya-4r6" secondAttribute="bottom" constant="8" id="YuK-iG-Mhk"/>
+                            <constraint firstItem="goX-Ya-4r6" firstAttribute="top" secondItem="YoT-4F-lQB" secondAttribute="bottom" constant="5" id="ZMB-8y-3bo"/>
+                            <constraint firstItem="R2I-5X-Zd2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kje-wF-iJJ"/>
+                            <constraint firstItem="YoT-4F-lQB" firstAttribute="top" secondItem="R2I-5X-Zd2" secondAttribute="bottom" id="pB7-xn-ewP"/>
+                            <constraint firstItem="R2I-5X-Zd2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="s06-3R-PzV"/>
+                            <constraint firstItem="R2I-5X-Zd2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="v8d-YF-XHD"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
